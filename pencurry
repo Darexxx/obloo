@@ -1,0 +1,90 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Auto Install Tools v.2.1
+# coded By D@r3XxX
+# thanks To Mr.Cakil
+# gausah ganti copyright kalo mau di hargai
+# Bersihkan Layar
+clear
+
+blue='\e[0;34'
+cyan='\e[0;36m'
+green='\e[0;34m'
+okegreen='\033[92m'
+lightgreen='\e[1;32m'
+white='\e[1;37m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+
+###################################################
+# CTRL C
+###################################################
+trap ctrl_c INT
+ctrl_c() {
+clear
+echo -e $red"[#]> (Ctrl + C ) Detected, Trying To Exit ... "
+sleep 1
+echo ""
+echo -e $green"[#]> Terima kasih sudah make tools saya ... "
+sleep 1
+echo ""
+echo -e $white"[#]> Bye Fucking People ... "
+read enter
+exit
+}
+
+echo -e $red"         ***********************************************"
+echo -e $red"         # $red Version : Coba Coba       $red              #"
+echo -e $red"         # $red happy fun guys                $red             #"
+echo -e $red"         # $red thanks to Mr.cakil and everyone  $red   #"
+echo -e $red"         # $red copyright : ./D@r3XxX     $red                #"
+echo -e $red"         ***********************************************"
+echo ""
+echo -e $white" 01). Spammer grab"
+echo -e $white" 02). Spammer Tokopedia"
+echo -e $white" 03). LITESPAM"
+echo -e $white" 04). EXIT"
+echo -e $green""
+read -p "[r00t@Fr03ty]> " act;
+
+if [ $act = 1 ] || [ $act = 1 ]
+then
+clear
+echo -e $red" installing spammer grab "
+sleep 1
+apt-get update && apt-get upgrade
+apt-get install git
+apt-get install python2
+pip install requests
+git clone https://github.com/p4kl0nc4t/Spammer-Grab/
+sleep 1
+echo -e $green" Done Install Spam Grab "
+fi
+
+if [ $act = 2 ] || [ $act = 2 ]
+then
+clear
+echo -e $red" installing spammer toko pedia "
+sleep 1
+apt-get update && apt-get upgrade
+apt-get install git
+apt-get install unzip
+apt-get install php
+git clone https://github.com/mrcakil/spam
+cd spam
+unzip toko-pedia.zip
+sleep 1
+echo -e $green" Done Install Spam Tokopedia "
+fi
+
+if [ $act = 3 ] || [ $act = 3 ]
+then
+clear
+echo -e $red" installing LITESPAM "
+apt-get update && apt-get upgrade
+apt-get install php
+apt-get install figlet
+apt-get install toilet
+apt-get install git
+git clone https://github.com/4L13199/LITESPAM
+sleep 1
+echo -e $green" Done Install LITESPAM "
