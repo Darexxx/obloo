@@ -11,8 +11,9 @@ echo "1.Tokopedia"
 echo "2.PHD"
 echo "3.jd.id"
 echo "0.Keluar"
-echo "\033[33;1m Pilih Angka"
-read curry
+echo "\033[33;1m Pilih Angka
+read -p "r00t@Fr03ty ~/" curry
+
 if [ $curry = 1 ] || [ $curry = 1 ]
 then
 clear
